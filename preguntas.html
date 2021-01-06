@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preguntas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sara Miralles" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="preguntas">
+      <form id ="miFormulario" method="post">
+        <label for="pregunta">Pregunta</label>
+        <input type="text" id="preg" required/>
+        <div id="radio">
+          <input type="radio" id="v" name="booleano" value="verdadero" />
+          <label for="v">Verdadero</label>
+          <input type="radio" id="f" name="booleano" value="falso" />
+          <label for="f">Falso</label>
+        </div>
+        <label for="puntuacion">Puntuacion</label>
+        <input type="number" id="punt" min="1" max="9" required />
+        <div id="botones">
+          <input type="button" value="Atras" id="atras"/>
+          <input type="submit" value="Grabar" id="enviar"/>
+        </div>
+      </form>
+    </div>
+    <div id="guardar">
+      <div id="cargando"></div>
+      <table id="respuestas" style="display: none">
+        <thead>
+          <tr>
+            <th>Pregunta</th>
+            <th>Respuesta</th>
+            <th>Puntuacion</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="regpre">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/jsonPreguntas.js"></script>
+  </body>
+</html>

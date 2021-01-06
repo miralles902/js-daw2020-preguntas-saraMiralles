@@ -1,0 +1,41 @@
+body {
+  display: table;
+  
+}
+form{
+  margin: 0;
+  padding: 0;
+}
+div#preguntas {
+  border: 1px solid black;
+  display: table-cell;
+  min-width: 175px;
+  padding-left: 6px;
+  margin-top: 0;
+}
+
+div#radio {
+  display:flex;
+}
+div#preguntas input, label{
+display: flex;
+}
+
+div#guardar {
+  border: 1px solid black;
+  display: table-cell;
+  min-width: 250px;
+  margin: 10px;
+  padding: 5px;
+}
+
+div#botones{
+  display: flex;
+}
+table#respuestas{
+border-collapse: collapse;
+}
+
+#respuestas,#respuestas th, #respuestas td{
+  border: 1px solid black;
+}
