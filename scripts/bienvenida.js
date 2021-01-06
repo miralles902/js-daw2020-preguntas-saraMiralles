@@ -39,7 +39,6 @@ function bienvenida() {
 function updatebienvenida() {
   //funcion de creacion del formulario
   return new Promise(function (resolve, reject) {
-    console.log("pimtamos form");
     let bienvenida = document.getElementById("welcome");
     bienvenida.innerHTML =
       '<form><label for="user">Usuario</label><input type="text" id="user"><p id="error"></p></form>'; //creamos el fomulario y sus elementos
